@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+:root {
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --accent-color: #3b82f6;
+  --border-color: #374151;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.journal-entry {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 15px;
+  padding: 5px 0;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-bottom-color: var(--accent-color);
+}
+
+.section-header {
+  color: var(--accent-color);
+  margin-bottom: 5px;
+}
